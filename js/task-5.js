@@ -8,11 +8,12 @@ const buton = document.querySelector(".change-color");
 const pEl = document.querySelector(".color");
 const body = document.querySelector("body");
 
-function changeColor(event) {
+function changeColor() {
+  const newColor = getRandomHexColor();
   // Butona tıklayınca verilen rengi span ve html üzerine yazdırıyoruz.
-  pEl.textContent = getRandomHexColor();
+  pEl.textContent = newColor;
   // Butona tıklandığında arka plan rengini değiştiriyoruz.
-  body.style.backgroundColor = getRandomHexColor();
+  body.style.backgroundColor = newColor;
 }
 
 buton.addEventListener("click", changeColor);

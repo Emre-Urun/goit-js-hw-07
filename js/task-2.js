@@ -40,6 +40,3 @@ gallery.insertAdjacentHTML("beforeend", markup);
 
 // önce eklediğim resimleri bir değişkene attım.
 const resimler = document.querySelectorAll(".gallery img");
-
-// değişkene aldığım resimleri forEach methodu kullanarak class adı verdim ve css üzerinde gerekli ayarlamaları yaptım.
-resimler.forEach((img) => img.classList.add("img-style"));
