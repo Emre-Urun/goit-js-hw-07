@@ -37,6 +37,3 @@ const markup = images
 
 // insertAdjacentHTML kullanarak her resmi sırası ile alt alta ekledim.
 gallery.insertAdjacentHTML("beforeend", markup);
-
-// önce eklediğim resimleri bir değişkene attım.
-const resimler = document.querySelectorAll(".gallery img");
